@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/
+*__test*
+report/
+rdata/
+Raw
+Rplot*
+old_codes
+*.RData*
+tools/
+Rplot/

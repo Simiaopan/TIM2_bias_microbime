@@ -1,0 +1,248 @@
+2025-10-23 13:02:02.267915 INFO::Writing function arguments to log file
+2025-10-23 13:02:02.269882 DEBUG::Function arguments
+2025-10-23 13:02:02.270961 DEBUG::Output folder: results/maaslin2_genus_sub/MaAsLin2_20251023_130202
+2025-10-23 13:02:02.271914 DEBUG::Min Abundance: 0.000100
+2025-10-23 13:02:02.27291 DEBUG::Min Prevalence: 0.100000
+2025-10-23 13:02:02.274012 DEBUG::Normalization: TSS
+2025-10-23 13:02:02.274992 DEBUG::Transform: LOG
+2025-10-23 13:02:02.275923 DEBUG::Analysis method: LM
+2025-10-23 13:02:02.276869 DEBUG::Max significance: 0.250000
+2025-10-23 13:02:02.277829 DEBUG::Random effects: Batch_ID
+2025-10-23 13:02:02.278779 DEBUG::Fixed effects: Time_c
+2025-10-23 13:02:02.279781 DEBUG::Correction method: BH
+2025-10-23 13:02:02.280961 DEBUG::Standardize: FALSE
+2025-10-23 13:02:02.281896 DEBUG::Cores: 7
+2025-10-23 13:02:02.282776 INFO::Verifying options selected are valid
+2025-10-23 13:02:02.284688 INFO::Determining format of input files
+2025-10-23 13:02:02.286622 INFO::Input format is data samples as rows and metadata samples as rows
+2025-10-23 13:02:02.289082 DEBUG::A total of 500 samples were found in both the data and metadata
+2025-10-23 13:02:02.290171 DEBUG::Reordering data/metadata to use same sample ordering
+2025-10-23 13:02:02.291998 INFO::Formula for random effects: expr ~ (1 | Batch_ID)
+2025-10-23 13:02:02.293922 INFO::Formula for fixed effects: expr ~  Time_c
+2025-10-23 13:02:02.295737 INFO::Filter data based on min abundance and min prevalence
+2025-10-23 13:02:02.297515 INFO::Total samples in data: 500
+2025-10-23 13:02:02.299171 INFO::Min samples required with min abundance for a feature not to be filtered: 50.000000
+2025-10-23 13:02:02.302549 INFO::Total filtered features: 1
+2025-10-23 13:02:02.304436 INFO::Filtered feature names from abundance and prevalence filtering: Izemoplasmatales
+2025-10-23 13:02:02.30862 INFO::Total filtered features with variance filtering: 0
+2025-10-23 13:02:02.310543 INFO::Filtered feature names from variance filtering:
+2025-10-23 13:02:02.312571 INFO::Running selected normalization method: TSS
+2025-10-23 13:02:02.318743 INFO::Bypass z-score application to metadata
+2025-10-23 13:02:02.320685 INFO::Running selected transform method: LOG
+2025-10-23 13:02:02.32792 INFO::Running selected analysis method: LM
+2025-10-23 13:02:02.330216 INFO::Creating cluster of 7 R processes
+2025-10-23 13:04:28.714014 INFO::Counting total values for each feature
+2025-10-23 13:04:28.722985 INFO::Writing filtered data to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/features/filtered_data.tsv
+2025-10-23 13:04:28.824244 INFO::Writing filtered, normalized data to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/features/filtered_data_norm.tsv
+2025-10-23 13:04:29.239572 INFO::Writing filtered, normalized, transformed data to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/features/filtered_data_norm_transformed.tsv
+2025-10-23 13:04:29.388677 INFO::Writing residuals to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/fits/residuals.rds
+2025-10-23 13:04:29.66086 INFO::Writing fitted values to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/fits/fitted.rds
+2025-10-23 13:04:29.682137 INFO::Writing extracted random effects to file results/maaslin2_genus_sub/MaAsLin2_20251023_130202/fits/ranef.rds
+2025-10-23 13:04:29.689141 INFO::Writing all results to file (ordered by increasing q-values): results/maaslin2_genus_sub/MaAsLin2_20251023_130202/all_results.tsv
+2025-10-23 13:04:29.694738 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): results/maaslin2_genus_sub/MaAsLin2_20251023_130202/significant_results.tsv
+2025-10-23 13:04:29.699562 INFO::Writing heatmap of significant results to file: results/maaslin2_genus_sub/MaAsLin2_20251023_130202/heatmap.pdf
+2025-10-23 13:04:29.71942 INFO::Writing association plots (one for each significant association) to output folder: results/maaslin2_genus_sub/MaAsLin2_20251023_130202
+2025-10-23 13:04:29.72381 INFO::Plotting associations from most to least significant, grouped by metadata
+2025-10-23 13:04:29.726499 INFO::Plotting data for metadata number 1, Time_c
+2025-10-23 13:04:29.729663 INFO::Creating scatter plot for continuous data, Time_c vs Alistipes
+2025-10-23 13:04:30.004551 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.005941 INFO::Creating scatter plot for continuous data, Time_c vs Roseburia
+2025-10-23 13:04:30.244787 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.246098 INFO::Creating scatter plot for continuous data, Time_c vs Butyrivibrio
+2025-10-23 13:04:30.38417 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.385434 INFO::Creating scatter plot for continuous data, Time_c vs Lactobacillus
+2025-10-23 13:04:30.592875 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.594265 INFO::Creating scatter plot for continuous data, Time_c vs Parabacteroides
+2025-10-23 13:04:30.79523 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.796598 INFO::Creating scatter plot for continuous data, Time_c vs Odoribacter
+2025-10-23 13:04:30.925279 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:30.926573 INFO::Creating scatter plot for continuous data, Time_c vs CAG.352
+2025-10-23 13:04:31.14058 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:31.14191 INFO::Creating scatter plot for continuous data, Time_c vs Barnesiella
+2025-10-23 13:04:36.976514 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:36.977783 INFO::Creating scatter plot for continuous data, Time_c vs Bacteroides
+2025-10-23 13:04:37.107336 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:37.108605 INFO::Creating scatter plot for continuous data, Time_c vs Akkermansia
+2025-10-23 13:04:37.321216 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:37.322641 INFO::Creating scatter plot for continuous data, Time_c vs X.Ruminococcus._torques_group
+2025-10-23 13:04:37.456453 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:37.45772 INFO::Creating scatter plot for continuous data, Time_c vs Coprobacter
+2025-10-23 13:04:37.660104 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:37.661519 INFO::Creating scatter plot for continuous data, Time_c vs Enterococcus
+2025-10-23 13:04:37.871172 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:37.872389 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._siraeum_group
+2025-10-23 13:04:38.112443 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:38.113831 INFO::Creating scatter plot for continuous data, Time_c vs Anaeroplasma
+2025-10-23 13:04:38.260534 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:38.409618 INFO::Creating scatter plot for continuous data, Time_c vs Ruminococcus
+2025-10-23 13:04:38.538489 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:38.539813 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._coprostanoligenes_group
+2025-10-23 13:04:38.751 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:38.752246 INFO::Creating scatter plot for continuous data, Time_c vs Sutterella
+2025-10-23 13:04:38.965136 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:38.966381 INFO::Creating scatter plot for continuous data, Time_c vs Butyricimonas
+2025-10-23 13:04:39.198728 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:39.200073 INFO::Creating scatter plot for continuous data, Time_c vs Citrobacter
+2025-10-23 13:04:39.453127 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:39.454386 INFO::Creating scatter plot for continuous data, Time_c vs Bilophila
+2025-10-23 13:04:39.587077 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:39.588596 INFO::Creating scatter plot for continuous data, Time_c vs Klebsiella
+2025-10-23 13:04:39.796536 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:39.798338 INFO::Creating scatter plot for continuous data, Time_c vs Defluviitaleaceae_UCG.011
+2025-10-23 13:04:40.001076 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.002331 INFO::Creating scatter plot for continuous data, Time_c vs Paraprevotella
+2025-10-23 13:04:40.134471 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.135718 INFO::Creating scatter plot for continuous data, Time_c vs Weissella
+2025-10-23 13:04:40.361733 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.363031 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._eligens_group
+2025-10-23 13:04:40.601401 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.60278 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._ventriosum_group
+2025-10-23 13:04:40.817632 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.819034 INFO::Creating scatter plot for continuous data, Time_c vs Lachnoclostridium
+2025-10-23 13:04:40.94765 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:40.949441 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._ruminantium_group
+2025-10-23 13:04:41.324539 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:41.325823 INFO::Creating scatter plot for continuous data, Time_c vs Erysipelatoclostridiaceae
+2025-10-23 13:04:41.453081 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:41.454522 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._xylanophilum_group
+2025-10-23 13:04:41.656246 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:41.657496 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospira
+2025-10-23 13:04:41.899228 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:41.900616 INFO::Creating scatter plot for continuous data, Time_c vs Erysipelotrichaceae_UCG.003
+2025-10-23 13:04:42.033713 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:42.035274 INFO::Creating scatter plot for continuous data, Time_c vs Phascolarctobacterium
+2025-10-23 13:04:42.388913 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:42.390194 INFO::Creating scatter plot for continuous data, Time_c vs Christensenellaceae_R.7_group
+2025-10-23 13:04:42.524643 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:42.52595 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospiraceae_FCS020_group
+2025-10-23 13:04:42.734256 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:42.735532 INFO::Creating scatter plot for continuous data, Time_c vs Fournierella
+2025-10-23 13:04:42.94149 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:42.942706 INFO::Creating scatter plot for continuous data, Time_c vs UCG.010
+2025-10-23 13:04:43.104437 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:43.105716 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospiraceae_NK4A136_group
+2025-10-23 13:04:43.320123 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:43.321379 INFO::Creating scatter plot for continuous data, Time_c vs Anaerostipes
+2025-10-23 13:04:43.528263 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:43.529549 INFO::Creating scatter plot for continuous data, Time_c vs Family_XIII_AD3011_group
+2025-10-23 13:04:43.664432 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:43.665755 INFO::Creating scatter plot for continuous data, Time_c vs Acidaminococcus
+2025-10-23 13:04:43.866889 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:43.868223 INFO::Creating scatter plot for continuous data, Time_c vs Butyricicoccus
+2025-10-23 13:04:44.073194 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:44.074516 INFO::Creating scatter plot for continuous data, Time_c vs Streptococcus
+2025-10-23 13:04:44.249319 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:44.250673 INFO::Creating scatter plot for continuous data, Time_c vs Prevotella
+2025-10-23 13:04:44.453685 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:44.454943 INFO::Creating scatter plot for continuous data, Time_c vs X.Eubacterium._hallii_group
+2025-10-23 13:04:44.663594 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:44.66487 INFO::Creating scatter plot for continuous data, Time_c vs Incertae_Sedis
+2025-10-23 13:04:44.805351 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:44.806715 INFO::Creating scatter plot for continuous data, Time_c vs Parasutterella
+2025-10-23 13:04:45.013438 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:45.01472 INFO::Creating scatter plot for continuous data, Time_c vs Monoglobus
+2025-10-23 13:04:45.235594 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:45.237111 INFO::Creating scatter plot for continuous data, Time_c vs Oscillospira
+2025-10-23 13:04:45.477295 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:45.478643 INFO::Creating scatter plot for continuous data, Time_c vs Holdemanella
+2025-10-23 13:04:45.681166 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:45.682415 INFO::Creating scatter plot for continuous data, Time_c vs Romboutsia
+2025-10-23 13:04:45.803849 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:45.805109 INFO::Creating scatter plot for continuous data, Time_c vs Dorea
+2025-10-23 13:04:46.017118 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:46.018322 INFO::Creating scatter plot for continuous data, Time_c vs Allisonella
+2025-10-23 13:04:46.253429 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:46.254857 INFO::Creating scatter plot for continuous data, Time_c vs UCG.005
+2025-10-23 13:04:46.388913 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:46.390348 INFO::Creating scatter plot for continuous data, Time_c vs Asteroleplasma
+2025-10-23 13:04:46.765607 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:46.76684 INFO::Creating scatter plot for continuous data, Time_c vs NK4A214_group
+2025-10-23 13:04:46.900944 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:46.902237 INFO::Creating scatter plot for continuous data, Time_c vs Flavonifractor
+2025-10-23 13:04:47.114765 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:47.116021 INFO::Creating scatter plot for continuous data, Time_c vs vadinBE97
+2025-10-23 13:04:47.315046 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:47.316264 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospiraceae_UCG.004
+2025-10-23 13:04:47.443002 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:47.444217 INFO::Creating scatter plot for continuous data, Time_c vs Faecalibacterium
+2025-10-23 13:04:47.650878 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:47.652268 INFO::Creating scatter plot for continuous data, Time_c vs Bacteroidales_RF16_group
+2025-10-23 13:04:47.919296 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:47.920599 INFO::Creating scatter plot for continuous data, Time_c vs Lactococcus
+2025-10-23 13:04:48.12705 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:48.128389 INFO::Creating scatter plot for continuous data, Time_c vs Bifidobacterium
+2025-10-23 13:04:48.272645 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:48.274013 INFO::Creating scatter plot for continuous data, Time_c vs Megasphaera
+2025-10-23 13:04:48.484227 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:48.485605 INFO::Creating scatter plot for continuous data, Time_c vs Muribaculaceae
+2025-10-23 13:04:48.686203 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:48.687513 INFO::Creating scatter plot for continuous data, Time_c vs Turicibacter
+2025-10-23 13:04:48.813738 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:48.814988 INFO::Creating scatter plot for continuous data, Time_c vs UCG.003
+2025-10-23 13:04:49.057735 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:49.059733 INFO::Creating scatter plot for continuous data, Time_c vs Clostridia_UCG.014
+2025-10-23 13:04:49.275293 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:49.276607 INFO::Creating scatter plot for continuous data, Time_c vs Intestinimonas
+2025-10-23 13:04:49.48294 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:49.484209 INFO::Creating scatter plot for continuous data, Time_c vs Family_XIII_UCG.001
+2025-10-23 13:04:49.607372 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:49.608571 INFO::Creating scatter plot for continuous data, Time_c vs Terrisporobacter
+2025-10-23 13:04:49.824189 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:49.825424 INFO::Creating scatter plot for continuous data, Time_c vs Intestinibacter
+2025-10-23 13:04:50.047709 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:50.048957 INFO::Creating scatter plot for continuous data, Time_c vs UCG.002
+2025-10-23 13:04:50.302501 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:50.303851 INFO::Creating scatter plot for continuous data, Time_c vs Clostridium_sensu_stricto_1
+2025-10-23 13:04:50.437692 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:50.439228 INFO::Creating scatter plot for continuous data, Time_c vs Oscillibacter
+2025-10-23 13:04:50.711655 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:50.713092 INFO::Creating scatter plot for continuous data, Time_c vs Coprococcus
+2025-10-23 13:04:50.995493 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:50.996912 INFO::Creating scatter plot for continuous data, Time_c vs RF39
+2025-10-23 13:04:51.130688 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:51.131987 INFO::Creating scatter plot for continuous data, Time_c vs Methanobrevibacter
+2025-10-23 13:04:51.273418 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:51.275206 INFO::Creating scatter plot for continuous data, Time_c vs Succinivibrio
+2025-10-23 13:04:51.603619 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:51.604819 INFO::Creating scatter plot for continuous data, Time_c vs Slackia
+2025-10-23 13:04:51.731522 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:51.732786 INFO::Creating scatter plot for continuous data, Time_c vs Enterobacter
+2025-10-23 13:04:51.926012 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:51.927243 INFO::Creating scatter plot for continuous data, Time_c vs UCG.004
+2025-10-23 13:04:52.053601 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:52.054806 INFO::Creating scatter plot for continuous data, Time_c vs Negativibacillus
+2025-10-23 13:04:52.257051 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:52.25841 INFO::Creating scatter plot for continuous data, Time_c vs Dialister
+2025-10-23 13:04:52.459037 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:52.460333 INFO::Creating scatter plot for continuous data, Time_c vs Blautia
+2025-10-23 13:04:52.630353 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:52.631746 INFO::Creating scatter plot for continuous data, Time_c vs Tyzzerella
+2025-10-23 13:04:52.840357 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:52.841601 INFO::Creating scatter plot for continuous data, Time_c vs Fusicatenibacter
+2025-10-23 13:04:53.048859 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.050208 INFO::Creating scatter plot for continuous data, Time_c vs Rikenellaceae_RC9_gut_group
+2025-10-23 13:04:53.261764 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.263092 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospiraceae_ND3007_group
+2025-10-23 13:04:53.384822 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.386133 INFO::Creating scatter plot for continuous data, Time_c vs Clostridia_vadinBB60_group
+2025-10-23 13:04:53.615147 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.616546 INFO::Creating scatter plot for continuous data, Time_c vs Agathobacter
+2025-10-23 13:04:53.831262 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.832496 INFO::Creating scatter plot for continuous data, Time_c vs Desulfovibrio
+2025-10-23 13:04:53.967779 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:53.969029 INFO::Creating scatter plot for continuous data, Time_c vs Marvinbryantia
+2025-10-23 13:04:54.200245 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:54.201599 INFO::Creating scatter plot for continuous data, Time_c vs Escherichia.Shigella
+2025-10-23 13:04:54.400651 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:54.401881 INFO::Creating scatter plot for continuous data, Time_c vs Prevotellaceae_NK3B31_group
+2025-10-23 13:04:54.599964 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:54.601249 INFO::Creating scatter plot for continuous data, Time_c vs Collinsella
+2025-10-23 13:04:54.755084 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:54.756491 INFO::Creating scatter plot for continuous data, Time_c vs Subdoligranulum
+2025-10-23 13:04:54.972618 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:54.973911 INFO::Creating scatter plot for continuous data, Time_c vs CAG.873
+2025-10-23 13:04:55.183878 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:55.185206 INFO::Creating scatter plot for continuous data, Time_c vs Lachnospiraceae_UCG.010
+2025-10-23 13:04:55.391593 DEBUG::`geom_smooth()` using formula = 'y ~ x'
+2025-10-23 13:04:55.392894 INFO::Creating scatter plot for continuous data, Time_c vs Colidextribacter
+2025-10-23 13:04:55.520333 DEBUG::`geom_smooth()` using formula = 'y ~ x'
