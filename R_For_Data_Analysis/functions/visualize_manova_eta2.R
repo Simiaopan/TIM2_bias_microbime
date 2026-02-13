@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# visualize MANOVA: need to arrange pillai results by yourself
+# visualize MANOVA: need to arrange pillai results by yourself 
 #-------------------------------------------------------------------------------
 visualize_manova_eta2 <- function(pillai_df, color_vec = NULL) {
   library(ggplot2)
