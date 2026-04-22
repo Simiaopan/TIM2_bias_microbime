@@ -1,13 +1,5 @@
 #===============================================================================
 # run_MaAsLin2_LMM
-#-------------------------------------------------------------------------------
-# A clean, flexible MaAsLin2 wrapper
-# Supports:
-#   - Automatic path creation
-#   - Optional custom output folder
-#   - Automatic logging
-#   - R-returned result table
-#   - Default save path: "output/MaAsLin2"
 #===============================================================================
 
 run_MaAsLin2_LMM <- function(feature_table, metadata,
@@ -26,7 +18,7 @@ run_MaAsLin2_LMM <- function(feature_table, metadata,
   suppressPackageStartupMessages(library(dplyr))
   
   #-------------------------------------------------------------------------------
-  # 1️⃣ Handle and normalize output path
+  # Handle and normalize output path
   #-------------------------------------------------------------------------------
   output_dir <- gsub("\\\\", "/", output_dir)               # unify path separator
   if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
@@ -39,7 +31,7 @@ run_MaAsLin2_LMM <- function(feature_table, metadata,
   log_file <- file.path(subdir, "maaslin2.log")
   
   #-------------------------------------------------------------------------------
-  # 2️⃣ Run MaAsLin2 model
+  # Run MaAsLin2 model
   #-------------------------------------------------------------------------------
   fit <- Maaslin2(
     input_data = feature_table,
@@ -58,7 +50,7 @@ run_MaAsLin2_LMM <- function(feature_table, metadata,
   )
   
   #-------------------------------------------------------------------------------
-  # 3️⃣ Load and enrich results
+  # Load and enrich results
   #-------------------------------------------------------------------------------
   res_path <- file.path(subdir, "all_results.tsv")
   if (!file.exists(res_path)) {
@@ -76,18 +68,18 @@ run_MaAsLin2_LMM <- function(feature_table, metadata,
     )
   
   #-------------------------------------------------------------------------------
-  # 4️⃣ Optionally keep or delete folder
+  # Optionally keep or delete folder
   #-------------------------------------------------------------------------------
   if (!save_output) {
     unlink(subdir, recursive = TRUE, force = TRUE)
     message("🧹 Temporary MaAsLin2 output deleted after import.")
   } else {
-    message(glue::glue("✅ MaAsLin2 output saved at: {subdir}"))
+    message(glue::glue("MaAsLin2 output saved at: {subdir}"))
     message(glue::glue("Log file: {log_file}"))
   }
   
   #-------------------------------------------------------------------------------
-  # 5️⃣ Return result and model object
+  # Return result and model object
   #-------------------------------------------------------------------------------
   return(list(result = res, fit = fit, log_path = log_file, output_dir = subdir))
 }
