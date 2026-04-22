@@ -70,7 +70,7 @@ analyze_meta_effects_cluster <- function(RPCA_biplot_table,
   
   plot(cvfit)
   title("Cross-validation curve for multinomial LASSO", line = 2.5)
-  cvfit_plot <- recordPlot()   # ✅ Save immediately
+  cvfit_plot <- recordPlot()
   
   best_lambda <- cvfit$lambda.1se
   cat("Selected λ (1se):", best_lambda, "\n")
